@@ -11,7 +11,7 @@ const DATA = {
   links: {
     linkedin: "https://www.linkedin.com/in/savita-p-n",
     github: "https://github.com/Savita-pn",
-    resume: "/Savita_Resume.pdf", // Add resume file path here
+    resume: "/resume.pdf", // Add resume file path here
   },
   objective:
     "Passionate about technology and innovation, I’m an aspiring software engineer committed to lifelong learning and excited to experiment with new tools and technology to improve my abilities. I want to use technology to improve society and have a constructive influence.",
@@ -246,12 +246,13 @@ export default function App() {
         <Card className="text-center">
           <p className="mb-4">You can download my resume below:</p>
           <a
-            href={DATA.links.resume}
-            download
-            className="px-6 py-2 bg-pink-600 text-white rounded-lg font-medium hover:bg-pink-700 transition"
-          >
-            Download Resume
-          </a>
+  href={DATA.links.resume}
+  download="Savita_PN_Resume.pdf"
+  className="px-6 py-2 bg-pink-600 text-white rounded-lg font-medium hover:bg-pink-700 transition"
+>
+  Download Resume
+</a>
+
         </Card>
       </Section>
 

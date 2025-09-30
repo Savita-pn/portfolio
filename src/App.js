@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 // --- Profile Data ---
 const DATA = {
-  name: "Savita P N",
+  name: "Savita PPP N",
   role: "Aspiring Software Engineer",
   location: "Rattihalli, Haveri",
   phone: "+91 9591507180",
@@ -126,8 +126,8 @@ export default function App() {
           </motion.div>
           <motion.div initial={{ opacity: 0, scale: 0.8 }} whileInView={{ opacity: 1, scale: 1 }} transition={{ duration: 0.7 }} className="flex justify-center md:justify-end">
   <img
-    src="public/profile.jpg/"
-    alt="profile"
+    src="/profile.jpg"
+    alt="profile/"
     className="w-64 h-64 rounded-full shadow-2xl border-4 border-white hover:scale-105 transition-transform duration-300"
   />
 </motion.div>

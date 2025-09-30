@@ -36,7 +36,7 @@ const DATA = {
     title: "Forest Fire Alert Using IoT", 
     year: "2024", 
     summary: "Integrates sensors, communication tech, and analytics for real-time fire alerts to minimize damage.",
-    github: "https://github.com/Savita-pn/forestfirealertusingiot.git"   // ✅ Add repo link
+    github: "https://github.com/Savita-pn/forestfirealertusingiot"   // ✅ Add repo link
   },
   { 
     title: "Emotion Responsive Music Player using EEG Signals", 
@@ -54,7 +54,7 @@ const DATA = {
     title: "College Event Hub – Virtual Internship Project, Infosys", 
     year: "2025", 
     summary: "Developed a full-stack event management platform using HTML, CSS, Bootstrap, JavaScript, and MongoDB. Implemented authentication, event creation, registration, and feedback with responsive UI.",
-    github: "https://github.com/springboardmentor1317s-hub/campus-eventhub-team2.git"   // ✅ Add repo link
+    github: "https://github.com/springboardmentor1317s-hub/campus-eventhub-team2"   // ✅ Add repo link
   },
   { 
     title: "Fantasy Cricket Game", 

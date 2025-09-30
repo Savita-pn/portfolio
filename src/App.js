@@ -1,6 +1,6 @@
 import { useMemo } from "react";
 import { motion } from "framer-motion";
-import profilePic from "./source/profile.jpg"; // ✅ Correct way to import image
+import profilePic from "./src/profile.jpg"; // ✅ Correct way to import image
 
 // --- Profile Data ---
 const DATA = {

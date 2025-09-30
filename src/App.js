@@ -222,18 +222,26 @@ export default function App() {
         </div>
       </Section>
 
-      {/* Projects */}
-      <Section id="projects" title="Projects" gradient="bg-gradient-to-r from-purple-50 to-purple-100">
-        <div className="grid md:grid-cols-2 gap-6">
-          {DATA.projects.map((p) => (
-            <Card key={p.title}>
-              <h3 className="font-semibold">{p.title}</h3>
-              <p className="text-sm text-slate-500">{p.year}</p>
-              <p className="mt-2 text-slate-700">{p.summary}</p>
-            </Card>
-          ))}
-        </div>
-      </Section>
+      {DATA.projects.map((p) => (
+  <Card key={p.title}>
+    <h3 className="font-semibold">{p.title}</h3>
+    <p className="text-sm text-slate-500">{p.year}</p>
+    <p className="mt-2 text-slate-700">{p.summary}</p>
+
+    {/* GitHub Link Button */}
+    {p.github && (
+      <a
+        href={p.github}
+        target="_blank"
+        rel="noreferrer"
+        className="inline-block mt-4 px-4 py-2 bg-gray-800 text-white rounded-lg hover:bg-gray-900 transition"
+      >
+        View on GitHub
+      </a>
+    )}
+  </Card>
+))}
+
 
       {/* Experience */}
       <Section id="experience" title="Experience" gradient="bg-gradient-to-r from-purple-50 to-purple-100">

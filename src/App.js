@@ -248,6 +248,7 @@ export default function App() {
 </Section>
 
 
+
       {/* Experience */}
       <Section id="experience" title="Experience" gradient="bg-gradient-to-r from-purple-50 to-purple-100">
         <div className="grid md:grid-cols-1 gap-6">

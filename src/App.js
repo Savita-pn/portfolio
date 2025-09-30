@@ -280,7 +280,7 @@ export default function App() {
           <p className="mb-4">You can download my resume below:</p>
           <a
             href={DATA.links.resume}
-            download="Savita_PN_Resume.pdf"
+            download="resume.pdf"
             className="px-6 py-2 bg-purple-600 text-white rounded-lg font-medium hover:bg-purple-700 transition"
           >
             Download Resume

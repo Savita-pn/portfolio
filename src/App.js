@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 // --- Profile Data ---
 const DATA = {
-  name: "Savita PPP N",
+  name: "Savita P N",
   role: "Aspiring Software Engineer",
   location: "Rattihalli, Haveri",
   phone: "+91 9591507180",

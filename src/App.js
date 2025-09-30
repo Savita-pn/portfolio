@@ -32,22 +32,38 @@ const DATA = {
     tools: ["MS Word", "Excel", "PowerPoint", "Git & GitHub", "Eclipse", "Maven"],
   },
   projects: [
-    {
-    title: "Forest Fire Alert using IoT",
-    description: "An IoT-based system to detect and alert forest fire risks.",
-    technologies: ["Arduino", "Sensors", "IoT"],
-    github: "https://github.com/your-username/forest-fire-alert",   // ✅ Add repo link
+  { 
+    title: "Forest Fire Alert Using IoT", 
+    year: "2024", 
+    summary: "Integrates sensors, communication tech, and analytics for real-time fire alerts to minimize damage.",
+    github: "https://github.com/Savita-pn/forestfirealertusingiot.git"   // ✅ Add repo link
   },
-    { title: "Emotion Responsive Music Player using EEG Signals", year: "2024", summary: "Deep Learning (CNN, RNN), kurtosis analysis and ML on NeuroSky EEG signals to play mood-matched music." },
-    { title: "Event Management System", year: "2023", summary: "DBMS-backed application with SQL, normalization, data integrity, and basic frontend/backend features." },
-    {
-    title: "Campus Event Hub",
-    description: "A web app to manage and discover campus events.",
-    technologies: ["React", "Node.js", "MongoDB"],
-    github: "https://github.com/your-username/campus-event-hub",    // ✅ Add repo link
+  { 
+    title: "Emotion Responsive Music Player using EEG Signals", 
+    year: "2024", 
+    summary: "Deep Learning (CNN, RNN), kurtosis analysis and ML on NeuroSky EEG signals to play mood-matched music.",
+    
   },
-    { title: "Fantasy Cricket Game", year: "2023", summary: "Developed a Python-based game using OOP and data structures for team selection and match simulation." },
-  ],
+  { 
+    title: "Event Management System", 
+    year: "2023", 
+    summary: "DBMS-backed application with SQL, normalization, data integrity, and basic frontend/backend features.",
+   
+  },
+  { 
+    title: "College Event Hub – Virtual Internship Project, Infosys", 
+    year: "2025", 
+    summary: "Developed a full-stack event management platform using HTML, CSS, Bootstrap, JavaScript, and MongoDB. Implemented authentication, event creation, registration, and feedback with responsive UI.",
+    github: "https://github.com/springboardmentor1317s-hub/campus-eventhub-team2.git"   // ✅ Add repo link
+  },
+  { 
+    title: "Fantasy Cricket Game", 
+    year: "2023", 
+    summary: "Developed a Python-based game using OOP and data structures for team selection and match simulation.",
+    
+  },
+]
+
   experience: [
     {
       role: "Virtual Internship 6.0 – Infosys Springboard",

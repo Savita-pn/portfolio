@@ -62,16 +62,17 @@ const DATA = {
     summary: "Developed a Python-based game using OOP and data structures for team selection and match simulation.",
     
   },
-]
+],
 
-  experience: [
-    {
-      role: "Virtual Internship 6.0 – Infosys Springboard",
-      period: "Sep 2025 – Present",
-      detail:
-        "Currently pursuing a certified virtual internship focused on software development, GitHub collaboration, and project-based learning. Engaged in mentor-led sessions and working on a full-stack project for event management.",
-    },
-  ],
+experience: [
+  {
+    role: "Virtual Internship 6.0 – Infosys Springboard",
+    period: "Sep 2025 – Present",
+    detail:
+      "Currently pursuing a certified virtual internship focused on software development, GitHub collaboration, and project-based learning. Engaged in mentor-led sessions and working on a full-stack project for event management.",
+  },
+],
+
   certifications: [
     "AI Primer – Infosys Springboard",
     "Rural IT Quiz – National Level Participant (TCS & Govt. of Karnataka)",

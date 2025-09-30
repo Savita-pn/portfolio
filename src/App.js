@@ -12,7 +12,8 @@ const DATA = {
   links: {
     linkedin: "https://www.linkedin.com/in/savita-p-n",
     github: "https://github.com/Savita-pn",
-    resume: "/resume.pdf", // Add resume file path here
+    resume: process.env.PUBLIC_URL + "/resume.pdf"
+
   },
   objective:
     "Passionate about technology and innovation, I’m an aspiring software engineer committed to lifelong learning and excited to experiment with new tools and technology to improve my abilities. I want to use technology to improve society and have a constructive influence.",

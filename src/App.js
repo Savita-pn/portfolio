@@ -8,7 +8,7 @@ const DATA = {
   location: "Rattihalli, Haveri",
   phone: "+91 9591507180",
   email: "nekarsavita@gmail.com",
-  
+
   links: {
     linkedin: "https://www.linkedin.com/in/savita-p-n",
     github: "https://github.com/Savita-pn",
@@ -22,14 +22,28 @@ const DATA = {
     { title: "SSLC – KSEEB", org: "Akshara Residential School, Shikaripur", period: "2020", detail: "Percentage: 98%" },
   ],
   skills: {
-    technical: ["C", "Python", "Java", "JavaScript", "PHP", "HTML5", "CSS3", "Bootstrap", "React.js", "MySQL", "MongoDB", "Data Structures", "OOP", "DBMS", "Machine Learning (Basics)"],
+    technical: [
+      "C", "Python", "Java", "JavaScript", "PHP", "HTML5", "CSS3", "Bootstrap",
+      "React.js", "MySQL", "MongoDB", "Data Structures", "OOP", "DBMS",
+      "Machine Learning (Basics)", "Selenium WebDriver", "JUnit", "TestNG", "JMeter"
+    ],
     soft: ["Communication", "Teamwork", "Time Management", "Problem Solving"],
-    tools: ["MS Word", "Excel", "PowerPoint","Git & GitHub","Eclipse","Maven"],
+    tools: ["MS Word", "Excel", "PowerPoint", "Git & GitHub", "Eclipse", "Maven"],
   },
   projects: [
     { title: "Forest Fire Alert Using IoT", year: "2024", summary: "Integrates sensors, communication tech, and analytics for real-time fire alerts to minimize damage." },
     { title: "Emotion Responsive Music Player using EEG Signals", year: "2024", summary: "Deep Learning (CNN, RNN), kurtosis analysis and ML on NeuroSky EEG signals to play mood-matched music." },
     { title: "Event Management System", year: "2023", summary: "DBMS-backed application with SQL, normalization, data integrity, and basic frontend/backend features." },
+    { title: "College Event Hub – Virtual Internship Project, Infosys", year: "2025", summary: "Developed a full-stack event management platform using HTML, CSS, Bootstrap, JavaScript, and MongoDB. Implemented authentication, event creation, registration, and feedback with responsive UI." },
+    { title: "Fantasy Cricket Game", year: "2023", summary: "Developed a Python-based game using OOP and data structures for team selection and match simulation." },
+  ],
+  experience: [
+    {
+      role: "Virtual Internship 6.0 – Infosys Springboard",
+      period: "Sep 2025 – Present",
+      detail:
+        "Currently pursuing a certified virtual internship focused on software development, GitHub collaboration, and project-based learning. Engaged in mentor-led sessions and working on a full-stack project for event management.",
+    },
   ],
   certifications: [
     "AI Primer – Infosys Springboard",
@@ -40,6 +54,7 @@ const DATA = {
     "Second Place – Stacksphere State-Level Mini Project Exhibition (JIT, Davangere)",
     "Infosys Bangalore DC – Pragati Path to Future Cohort 3 (Communication, Assertiveness, Presentation)",
     "Database Management System – Infosys Springboard",
+    "Abeyaantrix Edusoft: MLverse – Machine Learning Boot Camp Workshop",
   ],
   nptel: [
     "Elite – Internet of Things (IIT Kharagpur)",
@@ -102,7 +117,7 @@ export default function App() {
         <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
           <a href="#home" className="font-bold text-lg text-purple-600">{DATA.name.split(" ")[0]}</a>
           <nav className="hidden md:flex gap-6 text-sm">
-            {["About", "Education", "Skills", "Projects", "Certifications", "Publication", "Trainings", "Activities", "Leadership", "Resume", "Contact"].map(
+            {["About", "Education", "Skills", "Projects", "Experience", "Certifications", "Publication", "Trainings", "Activities", "Leadership", "Resume", "Contact"].map(
               (label) => (
                 <a key={label} href={`#${label.toLowerCase()}`} className="hover:text-purple-600">{label}</a>
               )
@@ -187,6 +202,19 @@ export default function App() {
               <h3 className="font-semibold">{p.title}</h3>
               <p className="text-sm text-slate-500">{p.year}</p>
               <p className="mt-2 text-slate-700">{p.summary}</p>
+            </Card>
+          ))}
+        </div>
+      </Section>
+
+      {/* Experience */}
+      <Section id="experience" title="Experience" gradient="bg-gradient-to-r from-purple-50 to-purple-100">
+        <div className="grid md:grid-cols-1 gap-6">
+          {DATA.experience.map((exp) => (
+            <Card key={exp.role}>
+              <h3 className="font-semibold">{exp.role}</h3>
+              <p className="text-xs text-slate-500 mb-2">{exp.period}</p>
+              <p className="text-slate-700">{exp.detail}</p>
             </Card>
           ))}
         </div>

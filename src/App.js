@@ -111,19 +111,29 @@ export default function App() {
         </div>
       </header>
 
-    <motion.div 
-  initial={{ opacity: 0, scale: 0.8 }} 
-  whileInView={{ opacity: 1, scale: 1 }} 
-  transition={{ duration: 0.7 }} 
-  className="flex justify-center md:justify-end"
->
-  <img 
-    src="/profile.jpg" 
-    alt="Profile" 
-    className="w-64 h-64 rounded-full object-cover shadow-lg"
+      {/* Hero Section */}
+      <section id="home" className="bg-gradient-to-r from-pink-500 to-pink-700 text-white">
+        <div className="max-w-6xl mx-auto px-6 py-20 grid md:grid-cols-2 gap-10 items-center">
+          <motion.div initial={{ opacity: 0, x: -50 }} whileInView={{ opacity: 1, x: 0 }} transition={{ duration: 0.7 }}>
+            <h1 className="text-5xl font-bold">{DATA.name}</h1>
+            <p className="mt-3 text-lg">{DATA.role} — {DATA.location}</p>
+            <p className="mt-6 max-w-md leading-relaxed">{DATA.objective}</p>
+            <div className="mt-6 flex gap-4">
+              <a className="px-4 py-2 bg-white text-pink-600 rounded-lg font-medium hover:bg-slate-200 transition" href={`mailto:${DATA.email}`}>Email</a>
+              <a className="px-4 py-2 bg-white text-pink-600 rounded-lg font-medium hover:bg-slate-200 transition" href={DATA.links.linkedin} target="_blank" rel="noreferrer">LinkedIn</a>
+              <a className="px-4 py-2 bg-white text-pink-600 rounded-lg font-medium hover:bg-slate-200 transition" href={DATA.links.github} target="_blank" rel="noreferrer">GitHub</a>
+            </div>
+          </motion.div>
+          <motion.div initial={{ opacity: 0, scale: 0.8 }} whileInView={{ opacity: 1, scale: 1 }} transition={{ duration: 0.7 }} className="flex justify-center md:justify-end">
+  <img
+    src="/profile.jpg"
+    alt="Profile"
+    className="w-64 h-64 rounded-full shadow-2xl border-4 border-white hover:scale-105 transition-transform duration-300"
   />
 </motion.div>
 
+        </div>
+      </section>
 
       {/* About */}
       <Section id="about" title="About Me" gradient="bg-gradient-to-r from-pink-50 to-pink-100">

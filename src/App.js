@@ -125,9 +125,12 @@ export default function App() {
             </div>
           </motion.div>
           <motion.div initial={{ opacity: 0, scale: 0.8 }} whileInView={{ opacity: 1, scale: 1 }} transition={{ duration: 0.7 }} className="flex justify-center md:justify-end">
- <img src="/profile.jpg" alt="profile" />
+ <img
+  src={`${process.env.PUBLIC_URL}/profile.jpg`}
+  alt="Profile"
+  className="w-64 h-64 rounded-full shadow-2xl border-4 border-white hover:scale-105 transition-transform duration-300"
+/>
 
-    className="w-64 h-64 rounded-full shadow-2xl border-4 border-white hover:scale-105 transition-transform duration-300"
  
 </motion.div>
 
